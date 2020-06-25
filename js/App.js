@@ -1,3 +1,6 @@
+//IIFE - encapsulate implementation logic and reduce global scope pollution
+// All vars here are function scoped to this IIFE
+
 (function (){
     console.log("App self start with IIFE");
     
