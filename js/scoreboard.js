@@ -1,5 +1,5 @@
 /**
- * Revealing module pattern - singleton
+ * Revealing module pattern - Constructor
  */
 
 define([],function () {
@@ -30,7 +30,7 @@ define([],function () {
         scoresElement.innerHTML = output;
     }
 
-    // return public members
+    // return public members when instantiated
     return {
         addResult: addResult,
         updateScoreboard: updateScoreboard

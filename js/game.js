@@ -52,6 +52,8 @@ define(['./player','./scoreboard'], function (player,scoreboard) {
             factor: factorElement.value
         };
 
+        //constructor pattern, create a scoreboard instance
+        var scoreboard = new Scoreboard();
         // add the result and update the scoreboard
         scoreboard.addResult(result);
         scoreboard.updateScoreboard();
