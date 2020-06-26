@@ -1,7 +1,8 @@
 /**
  * Revealing module pattern - singleton
  */
-var scoreboard = function() {
+
+define([],function () {
 
     console.log('Creating a scoreboard...');
 
@@ -35,4 +36,4 @@ var scoreboard = function() {
         updateScoreboard: updateScoreboard
     }
 
-}();
+});

@@ -1,8 +1,8 @@
 /**
  * Revealing module pattern - singleton
  */
-var player = function () {
 
+define([], function () {
     //private members here.
     var playerName = '';
 
@@ -23,4 +23,5 @@ var player = function () {
         setName: setName,
         getName: getName
     }
-}(); // function executes immediately and returns access to private members
+});
+
