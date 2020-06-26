@@ -1,8 +1,7 @@
 /**
  * Revealing module pattern - singleton
  */
-var game = function() {
-
+define(['./player','./scoreboard'], function (player,scoreboard) {
     // private members
     var factorElement = document.getElementById('factor');
     var problemsPerGame = 3; // set default value
@@ -79,4 +78,5 @@ var game = function() {
         getProblemCount: getProblemCount
     };
 
-}();
+
+});
