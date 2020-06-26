@@ -1,7 +1,7 @@
 /**
  * Revealing module pattern - singleton
  */
-var Scoreboard = function() {
+var scoreboard = function() {
 
     console.log('Creating a scoreboard...');
 
@@ -35,4 +35,4 @@ var Scoreboard = function() {
         updateScoreboard: updateScoreboard
     }
 
-};
+}();
