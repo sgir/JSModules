@@ -50,8 +50,16 @@
     <div class="col-sm-offset-2 col-sm-10" id="scores"><h2>Scoreboard</h2><h4>No scores yet</h4></div>
 
     <!-- add script tags here -->
-    <script data-main="js/app" src="node_modules/requirejs/require.js"></script>
-<!--    &lt;!&ndash; order is important as the dependency is not managed with module patterns&ndash;&gt;-->
+<!--    this only works with systemjs0.x versions as commonJs support doesn't exist for v2.x-->
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+        SystemJS.import('./js/App.js');
+    </script>
+
+    <!-- load requirejs -->
+<!--    <script data-main="js/app" src="node_modules/requirejs/require.js"></script>-->
+
+<!--    order is important as the dependency is not managed with module patterns-->
 <!--    <script src="js/player.js" type="text/javascript"></script>-->
 <!--    <script src="js/game.js" type="text/javascript"></script>-->
 <!--    <script src="js/scoreboard.js" type="text/javascript"></script>-->
