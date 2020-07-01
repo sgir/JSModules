@@ -1,27 +1,23 @@
-/**
- * Revealing module pattern - singleton
- */
+//private members here.
+var playerName = '';
 
-define([], function () {
-    //private members here.
-    var playerName = '';
+function logPlayer() {
+    console.log('The current player is ' + playerName + '.');
+}
 
-    function logPlayer() {
-        console.log('The current player is ' + playerName + '.');
-    }
+function setName(newName) {
+    playerName = newName;
+}
 
-    function setName(newName) {
-        playerName = newName;
-    }
+function getName() {
+    return playerName;
+}
 
-    function getName() {
-        return playerName;
-    }
+//expose through exports object
+module.exports = {
+    logPlayer: logPlayer,
+    setName: setName,
+    getName: getName
+};
 
-    return {
-        logPlayer: logPlayer,
-        setName: setName,
-        getName: getName
-    }
-});
 
