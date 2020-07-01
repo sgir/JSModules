@@ -3,7 +3,7 @@ console.log('Creating a scoreboard...');
 // private members
 var results = []; // array to store result of every game
 
-function addResult(newResult) {
+function  addResult(newResult) {
     results.push(newResult);
 }
 
@@ -24,8 +24,11 @@ function updateScoreboard() {
     scoresElement.innerHTML = output;
 }
 
-// return public members when instantiated
-module.exports =  {
-    addResult: addResult,
-    updateScoreboard: updateScoreboard
-};
+// function someprivateFunction(){
+// //
+// // }
+
+// var homeTeam = "Tigers";
+
+//using es2015 modules
+export { addResult, updateScoreboard };
